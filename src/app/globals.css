@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pearl-white: #FDFEFE;
+  --color-pure-white: #FFFFFF;
+  --color-ice-blue: #EAF3FA;
+  --color-powder-blue: #F1F7FC;
+  --color-soft-sky: #DCECF7;
+  --color-sage-teal: #65B5AA;
+  --color-medical-aqua: #E8F6F3;
+  --color-mint-mist: #F1F7F5;
+
+  --color-primary-heading: #34495E;
+  --color-secondary-heading: #397FA5;
+  --color-body-text: #64748B;
+  --color-muted-text: #8493A0;
+
+  --color-primary-btn: #397FA5;
+  --color-btn-hover: #286B91;
+  --color-border-light: #E3EBF1;
+  --color-champagne-gold: #C7AD7A;
+
+  --font-serif: var(--font-serif-display), var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-manrope), var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  --bg-primary: #FDFEFE;
+  --color-primary-btn: #397FA5;
+  --color-sage: #65B5AA;
+  --color-ice: #EAF3FA;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  background-color: #FDFEFE;
+  color: #64748B;
+  font-family: var(--font-manrope), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Luxury Editorial Headings */
+.font-editorial {
+  font-family: var(--font-serif-display), var(--font-playfair), Georgia, serif;
+}
+
+/* Premium Light Luxury Shadows */
+.shadow-light-card {
+  box-shadow: 0 4px 20px -2px rgba(65, 105, 135, 0.05), 0 1px 3px 0 rgba(65, 105, 135, 0.02);
+}
+
+.shadow-light-luxury {
+  box-shadow: 0 12px 36px -4px rgba(65, 105, 135, 0.08), 0 4px 12px -2px rgba(65, 105, 135, 0.04);
+}
+
+.shadow-light-hover {
+  box-shadow: 0 20px 40px -10px rgba(65, 105, 135, 0.12), 0 6px 16px -3px rgba(65, 105, 135, 0.05);
+}
+
+/* Custom delicate light scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F7FC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DCECF7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B6D5EC;
+}
+
+/* Subtle, barely noticeable radial gradients for light theme */
+.ice-radial-glow {
+  background: radial-gradient(circle, rgba(220, 236, 247, 0.45) 0%, rgba(241, 247, 252, 0.3) 50%, rgba(253, 254, 254, 0) 75%);
+}
+
+.teal-radial-glow {
+  background: radial-gradient(circle, rgba(101, 181, 170, 0.14) 0%, rgba(232, 246, 243, 0.35) 50%, rgba(253, 254, 254, 0) 75%);
+}
+
+.aqua-radial-glow {
+  background: radial-gradient(circle, rgba(232, 246, 243, 0.6) 0%, rgba(241, 247, 245, 0.3) 50%, rgba(253, 254, 254, 0) 75%);
+}
+
+/* Accessible focus ring */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #397FA5;
+  outline-offset: 2px;
+}
